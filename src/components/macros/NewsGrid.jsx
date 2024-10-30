@@ -2,9 +2,9 @@ import React from 'react';
 import { Play } from 'lucide-react';  // Import Play icon from Lucide React
 
 const NewsGrid = () => (
-  <section className="py-8 bg-black">
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <section className="py-8 bg-black border border-white">
+    <div className="container mx-auto px-4 border border-red-400">
+      <div className="flex justify-center border border-yellow-400">
         {[
           {
             title: "INSIDE VIEW: First workouts in Orlando",
@@ -23,7 +23,7 @@ const NewsGrid = () => (
             image: "/news3.svg",
           },
         ].map((item, index) => (
-          <div key={index} className="relative group bg-black rounded-lg overflow-hidden shadow-lg">
+          <div key={index} className="w-[] h-[330px] relative group bg-black rounded-lg overflow-hidden shadow-lg">
             <img
               src={item.image}
               alt={item.title}
@@ -31,7 +31,7 @@ const NewsGrid = () => (
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent transition-all group-hover:bg-black/70">
               <div className="p-4 absolute bottom-0 w-full">
-                <h3 className="text-white text-lg font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-white text-center text-lg font-semibold mb-2">{item.title}</h3>
                 <div className="flex items-center space-x-2">
                   {item.duration && (
                     <div className="flex items-center text-white space-x-1">
