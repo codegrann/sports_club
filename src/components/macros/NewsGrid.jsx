@@ -35,3 +35,5 @@ const NewsGrid = () => (
       </div>
     </section>
   );
+
+  export default NewsGrid;

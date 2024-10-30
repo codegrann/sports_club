@@ -1,10 +1,20 @@
-import { useState } from 'react'
+import React from 'react'
+
+import { Footer, Header, HeroSection, NewsGrid, StoreSection } from './components/Index'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-red-500'>hello</h1>
+      <div className="min-h-screen bg-black">
+      <Header />
+      <main>
+        <HeroSection />
+        <NewsGrid />
+        <StoreSection />
+      </main>
+      <Footer/>
+      </div>
     </>
   )
 }

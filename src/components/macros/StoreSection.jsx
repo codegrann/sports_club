@@ -37,3 +37,5 @@ const StoreSection = () => (
       </div>
     </section>
   );
+
+  export default StoreSection;

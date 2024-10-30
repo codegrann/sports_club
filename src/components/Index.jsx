@@ -1,0 +1,5 @@
+export {default as Footer} from "./macros/Footer"
+export {default as Header} from "./macros/Header"
+export {default as HeroSection} from "./macros/HeroSection"
+export {default as NewsGrid} from "./macros/NewsGrid"
+export {default as StoreSection} from "./macros/StoreSection"
