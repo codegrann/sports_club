@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Clock } from 'lucide-react';  // Import Play icon from Lucide React
+import { Play, Clock } from 'lucide-react'; 
 
 const NewsGrid = () => (
   <section className="py-8 bg-black">
@@ -9,7 +9,6 @@ const NewsGrid = () => (
           {
             title: "INSIDE VIEW: First workouts in Orlando",
             duration: "08:55",
-            // category: "CLUB",
             image: "/news1.svg",
           },
           {
@@ -37,7 +36,7 @@ const NewsGrid = () => (
                 <div className="flex items-center space-x-2">
                   {item.duration && (
                     <div className="flex items-center text-white space-x-1 mx-auto">
-                      <Play size={16} className="text-white" /> {/* Play Icon */}
+                      <Play size={16} className="text-white" />
                       <span className="text-sm">{item.duration}</span>
                     </div>
                   )}
