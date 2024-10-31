@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ticket.css";
 
 const Tickets = () => {
     const tickets = [
@@ -9,10 +10,10 @@ const Tickets = () => {
     ];
   
     return (
-      <section className="py-8 border border-red-400">
+      <section className="py-8">
         <div className="container mx-auto px-4 w-[75%]">
-          <h2 className="text-2xl mb-6 text-center">
-            <span className="text-yellow-400">Murang'a Seal Tickets</span> 
+          <h2 className="text-2xl mb-6 text-center textGradient">
+            <span className="">Murang'a Seal Tickets</span> 
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             {tickets.map((ticket, idx) => (

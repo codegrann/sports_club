@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Calendar } from 'lucide-react';
+import "./ticket.css";
 
 const FirstTeamSection = () => {
     const [currentMatch, setCurrentMatch] = useState(0);
@@ -46,9 +47,9 @@ const FirstTeamSection = () => {
         <section className="bg-white py-8">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center mb-6">
-                    <h2 className="text-3xl font-semibold">
+                    <h2 className="text-3xl font-semibold textGradient">
                         <span>Murang'a </span>
-                        <span className="text-yellow-600">First Team</span>
+                        <span className="">First Team</span>
                     </h2>
 
                     {/* Countdown Timer */}
