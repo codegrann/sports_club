@@ -1,5 +1,6 @@
 import { Clock } from 'lucide-react';
 import React from 'react';
+
 const HeroSection = () => (
     <section className="relative h-[500px]">
       <div className="absolute inset-0">
