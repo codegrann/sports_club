@@ -1,26 +1,28 @@
 import React from 'react';
-import { Play } from 'lucide-react';  // Import Play icon from Lucide React
+import { Play, Clock } from 'lucide-react';  // Import Play icon from Lucide React
 
 const NewsGrid = () => (
-  <section className="py-8 bg-black border border-white">
-    <div className="container mx-auto px-4 border border-red-400">
-      <div className="flex justify-center border border-yellow-400">
+  <section className="py-8 bg-black">
+    <div className="container mx-auto px-4">
+      <div className="flex justify-center">
         {[
           {
             title: "INSIDE VIEW: First workouts in Orlando",
             duration: "08:55",
-            category: "CLUB",
+            // category: "CLUB",
             image: "/news1.svg",
           },
           {
             title: "Welcome Event in Orlando",
             category: "CLUB",
             image: "/news2.svg",
+            period: "7 hrs ago"
           },
           {
             title: "Chimezie Metu joins the team",
             category: "BASKETBALL",
             image: "/news3.svg",
+            period: "3 hrs ago"
           },
         ].map((item, index) => (
           <div key={index} className="w-[] h-[330px] relative group bg-black rounded-lg overflow-hidden shadow-lg">
@@ -34,12 +36,13 @@ const NewsGrid = () => (
                 <h3 className="text-white text-center text-lg font-semibold mb-2">{item.title}</h3>
                 <div className="flex items-center space-x-2">
                   {item.duration && (
-                    <div className="flex items-center text-white space-x-1">
+                    <div className="flex items-center text-white space-x-1 mx-auto">
                       <Play size={16} className="text-white" /> {/* Play Icon */}
                       <span className="text-sm">{item.duration}</span>
                     </div>
                   )}
-                  <span className="text-yellow-400 text-sm">{item.category}</span>
+                  <span className="text-yellow-400 text-sm mx-auto">{item.category} <span className='text-white flex items-center gap-2 mt-2'>{item.period && <Clock className='w-4'/>} {item.period}</span></span>
+                 
                 </div>
               </div>
             </div>

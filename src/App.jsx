@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Footer, Header, HeroSection, NewsGrid, StoreSection } from './components/Index'
+import { Footer, Header, HeroSection, NewsGrid, NewsGridAll, StoreSection, Tickets, FirstTeamSection, Players } from './components/Index'
 
 function App() {
 
@@ -11,7 +11,11 @@ function App() {
       <main>
         <HeroSection />
         <NewsGrid />
+        <FirstTeamSection />
+        <Tickets />
         <StoreSection />
+        <NewsGridAll />
+        <Players />
       </main>
       <Footer/>
       </div>
@@ -19,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
