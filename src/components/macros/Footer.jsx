@@ -4,7 +4,6 @@ import { Mail, Phone } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-black text-white pt-16 pb-8 px-">
-      {/* Main Partners */}
       <div className="max-w-7xl mx-auto">
         <div className="text-xs flex items-center justify-between max-sm:px-2"><span className='text-[#F4E721]'>MAIN PARTNERS</span> <span className='bg-[#F4E721] py-1 px-2 rounded-sm'>VIEW PATTERNS</span></div>
         <div className="flex flex-wrap items-center justify-between mb-12  relative h-24">
@@ -28,7 +27,6 @@ const Footer = () => {
             </div>
           </div>
 
-        {/* Subscribe Section */}
         <div className="bg-[#F4E721] rounded-lg p-6 mb-12 max-w-5xl mx-auto">
           <div className="max-w-full mx-auto flex justify-around">
             <div className="text-black max-w-[300px] text-lg font-semibold mb-2">
@@ -47,9 +45,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Navigation and Social Links */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[#F4E721] pb-1 mb-8 border-b-[0.98px] border-[#F4E721] max-w-5xl mx-auto">
-          {/* Navigation */}
           <nav className="flex space-x-6">
             <a href="/" className="hover:text-yellow-400 transition-colors">Home</a>
             <a href="/about" className="hover:text-yellow-400 transition-colors">About</a>
@@ -57,7 +53,6 @@ const Footer = () => {
             <a href="/blogs" className="hover:text-yellow-400 transition-colors">Blogs</a>
           </nav>
 
-          {/* Social Media Icons */}
           <div className="flex space-x-4 text-[#F4E721]">
             <a href="#" className="hover:text-yellow-400 transition-colors">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -82,7 +77,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-[#F4E721] text-sm max-w-5xl mx-auto">
           <div className="">
             © Muranga Seal. All rights reserved.
