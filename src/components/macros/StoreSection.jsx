@@ -5,12 +5,12 @@ const StoreSection = () => (
     <section className="py-8 bg-white">
       <div className="container mx-auto px-4 relative">
         <h2 className="text-2xl font-bold mb-6 textGradient mx-auto max-w-[250px]">Murang'a seal Store</h2>
-        <div className='w-[234.44px] h-[32px] rounded-[3px] bg-black text-white text-xs flex gap-2 justify-center items-center ml-auto mb-2'>OFFICIAL STORE MURANGA SEAL <img src="/arrow.svg" alt="" className='w-4'/></div>
+        <div className='w-[234.44px] h-[32px] rounded-[3px] cursor-pointer bg-black text-white text-xs flex gap-2 justify-center items-center ml-auto mb-2'>OFFICIAL STORE MURANGA SEAL <img src="/arrow.svg" alt="" className='w-4'/></div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
             {
               title: "NEW KIT",
-              description: "Get the new 2024-25 kit and be the first to wear it.",
+              description: "We already have it here! Get the new 2024-25 kit and be the first to wear it.",
               image: "/store1.svg",
               thumbnail:"/store11.svg"
             },

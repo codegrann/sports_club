@@ -41,7 +41,7 @@ const NewsGrid = () => (
                       <span className="text-sm">{item.duration}</span>
                     </div>
                   )}
-                  <span className="text-yellow-400 text-sm mx-auto">{item.category} <span className='text-white flex items-center gap-2 mt-2'>{item.period && <Clock className='w-4'/>} {item.period}</span></span>
+                  <span className="text-[#F4E721] text-sm mx-auto">{item.category} <span className='text-white flex items-center gap-2 mt-2'>{item.period && <Clock className='w-4'/>} {item.period}</span></span>
                  
                 </div>
               </div>
