@@ -5,13 +5,12 @@ const Players = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const players = Array(4).fill({ image: "/player.svg" });
 
-    // Auto-scroll functionality
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide(prev => (prev + 1) % players.length);
-        }, 3000); // Change image every 3 seconds
+        }, 3000);
 
-        return () => clearInterval(interval); // Clear interval on component unmount
+        return () => clearInterval(interval);
     }, [players.length]);
 
     const nextSlide = () => {
