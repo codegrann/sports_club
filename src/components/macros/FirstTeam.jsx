@@ -30,7 +30,6 @@ const FirstTeamSection = () => {
         },
     ];
 
-    // Sample countdown logic (static for example, adjust to dynamic based on match dates)
     useEffect(() => {
         const interval = setInterval(() => {
             setCountdown({
@@ -52,7 +51,6 @@ const FirstTeamSection = () => {
                         <span className="">First Team</span>
                     </h2>
 
-                    {/* Countdown Timer */}
                     <div className="text-center mb-8 text-sm flex items-center gap-2">
                         <span className="text-gray-700">NEXT MATCH</span>
                         <span className="text-4xl font-bold text-yellow-600">
@@ -83,8 +81,6 @@ const FirstTeamSection = () => {
                 </div>
 
                 
-
-                {/* Matches Display */}
                 <div className='flex'>
                     <img src="/results.svg" alt="" className='w-80'/>
                 
