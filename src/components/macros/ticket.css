@@ -1,6 +1,6 @@
 .textGradient {
-    background: linear-gradient(90deg, #FAE115, #000000); /* Replace with your gradient colors */
+    background: linear-gradient(90deg, #FAE115, #000000);
     background-clip: text;
-    -webkit-background-clip: text; /* Required for Safari */
+    -webkit-background-clip: text;
     color: transparent;
 }
